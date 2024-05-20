@@ -1,0 +1,61 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+    margin: 0; /* Remove the default margin */
+}
+
+#img-A {
+    filter: blur(4px);
+  }
+  
+#img-B {
+    filter: contrast(200%);
+  }
+  #img-C {
+    filter: hue-rotate(90deg);
+  }
+
+#image-row { 
+    /* Use flexbox to arrange the images in a row */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+}
+button {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  12px 12px 24px #bebebe,
+             -12px -12px 24px #ffffff;
+  }
+   
+  button:hover {
+    background-color: red;
+    transition:ease-in-out; 
+  }
+.img-container {
+    box-shadow: 10px 5px 5px red;
+    
+    overflow: hidden;
+  }
+
+img { 
+    /* Prevent images from exceeding the width of their parent */
+    max-width: 100%;
+    height: auto;
+}
+
+#click-me {
+    /* Centre the button */
+    display: block;
+    margin: auto;
+
+    /* Style the button to look nice */
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+
+    font-size: 2em;
+    font-weight: bold;
+}
